@@ -30,7 +30,7 @@ export class LoginComponent {
       if( result.length>0 && result[0].userId== this.username && result[0].password== this.password)
        {  
          //Global class will userName and userId for always. 
-        GlobalVar.GloballyAssign(result[0].username, result[0].userId);
+        GlobalVar.GloballyAssign(result[0].lastName, result[0].userId);
          var isAdminRole=  result[0].roleTypeId>0?true:false;  
          var acessP;
         if(isAdminRole === true)
